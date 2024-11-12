@@ -1,5 +1,8 @@
 package tech.reliab.course.samoylovaea.bank.entity;
 import tech.reliab.course.samoylovaea.bank.enums.BankOfficeStatus;
+import lombok.*;
+@Getter
+@Setter
 public class BankOffice {
 
     private int id;
@@ -22,30 +25,6 @@ public class BankOffice {
         this.cashWithdrawal = cashWithdrawal;
         this.cashDeposit = cashDeposit;
         this.rentCost = rentCost;
-    }
-
-    public void setStatus(BankOfficeStatus status) {
-        this.status = status;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setOfficeMoney(double officeMoney) {
-        this.officeMoney = officeMoney;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
     }
 
     @Override

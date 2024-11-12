@@ -1,7 +1,9 @@
 package tech.reliab.course.samoylovaea.bank.entity;
 
 import java.time.LocalDate;
-
+import lombok.*;
+@Getter
+@Setter
 public class Employee {
 
     private int id;
@@ -23,26 +25,6 @@ public class Employee {
         this.bankOffice = bankOffice;
         this.canIssueLoans = canIssueLoans;
         this.salary = salary;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public Bank getBank() {
-        return bank;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
     }
 
     @Override
